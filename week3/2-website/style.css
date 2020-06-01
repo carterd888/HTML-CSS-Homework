@@ -2,7 +2,7 @@
 
 * {
   font-family: "Pacifico", cursive;
-  background-color: rgb(188, 243, 226);
+  /* background-color: rgb(188, 243, 226); */
 }
 
 li {
@@ -18,8 +18,9 @@ a {
 
 .top-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  background-color: rgb(188, 243, 226);
 }
 
 .top-header .header-image {
@@ -36,16 +37,18 @@ a {
   border-width: medium;
   width: 125px;
   height: 50px;
+  align-self: center;
 }
 
 .navigation ul {
   display: flex;
+  float: left;
   flex-direction: column;
   padding-left: 5px;
 }
 
 .navigation li {
-  padding-top: 25px;
+  padding-top: 0px;
   padding-right: 50px;
   font-size: 25px;
 }
@@ -53,6 +56,11 @@ a {
 /* About section styles */
 
 .about {
+  background-image: url(images/Cakes/cupcakes.jpg);
+  max-width: 100%;
+  max-height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 50px;
 }
 
@@ -70,11 +78,11 @@ a {
 }
 
 .about .cupcakes {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   width: 100%;
   border: 2px solid rgb(252, 251, 253);
-  margin: 0;
+  margin: 0; */
 }
 
 /* Example cake styles */
@@ -115,7 +123,7 @@ a {
   font-size: 25px;
 }
 
-/* Media queries */
+/* Media queries
 
 @media only screen and (min-width: 650px) {
   .navigation ul {
@@ -193,4 +201,4 @@ a {
   .footer li {
     font-size: 30px;
   }
-}
+} */
